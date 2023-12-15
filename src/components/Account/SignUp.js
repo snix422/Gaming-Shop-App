@@ -83,7 +83,13 @@ const SignUp =  () => {
 
     return(
         <Container sx={{backgroundColor: 'rgb(240, 238, 238)', minWidth: '100vw', height: '100vh',display:'flex', justifyContent:'center', alignItems:'center'}}>
-            <Box sx={{backgroundColor: 'white', width: '50vw', minHeight: '40vh', borderRadius: '20px', display: 'flex', flexDirection:'column', alignItems:'center', boxShadow: '-6px 5px 21px -7px rgba(8,8,8,1)'}}>
+            <Box sx={{backgroundColor: 'white', width:{
+               xl:'60vw',
+               lg:'70vw',
+               md:'80vw',
+               sm:'90vw',
+               xs:'95vw'
+            }, minHeight: '40vh', borderRadius: '20px', display: 'flex', flexDirection:'column', alignItems:'center', boxShadow: '-6px 5px 21px -7px rgba(8,8,8,1)'}}>
             <Typography sx={{ fontFamily: 'Montserrat', fontSize: '25px', marginBottom: '30px', marginTop:'20px'}}>Rejestracja</Typography>
             {error.login ? <TextField  name="login" error helperText={error.login} value={form.login} onChange={updateField} variant="outlined" label="Login" color="warning" sx={{width:'300px', marginBottom:'10px'}}></TextField> 
             : <TextField  name="login" value={form.login} onChange={updateField} variant="outlined" label="Login" color="warning" sx={{width:'300px', marginBottom:'10px'}}></TextField>}

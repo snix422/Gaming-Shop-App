@@ -58,7 +58,13 @@ const ProductComments = (props) => {
             multiline
             minRows={4}
             maxRows={8}
-            sx={{width:'500px'}}
+            sx={{width:{
+                xl:'30vw',
+                lg:'40vw',
+                md:'50vw',
+                sm:'70vw',
+                xs:'80vw'
+            }}}
             onChange={(e)=>{setTermComment(e.target.value)}}
             value={termComment}
           /><Button variant="contained" sx={{marginTop:'10px', width:'300px'}} onClick={addOpinie}>Dodaj opinie</Button></Box> : <Typography sx={{fontFamily:'Montserrat', fontSize:'30px', marginBottom:'30px'}}>Aby dodać opinię musisz być zalogowany</Typography>}
