@@ -85,7 +85,7 @@ const SignIn = () => {
     }
 
     const backtoRegister = () => {
-        navigate('/rejestracja');
+        navigate('/signup');
     }
 
     return(

@@ -78,7 +78,7 @@ const SignUp =  () => {
     }
 
     const backToLogin = () => {
-        navigate('/zaloguj')
+        navigate('/signin')
     }
 
     return(
