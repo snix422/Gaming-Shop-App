@@ -4,11 +4,11 @@ Follow these steps to set up the project:
 
 1. Clone the repo
 ```sh
-  https://github.com/snix422/FurnitureShop.git
+  https://github.com/snix422/Gaming-Shop-App.git
 ```
 2. Navigate to your project directory
 ```sh
-  cd FurnitureShop
+  cd Gaming-Shop-App
 ```
 
 3. Install yarn packages
