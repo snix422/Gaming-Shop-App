@@ -20,6 +20,7 @@ const DetailsUser = ({ changeStateDrawerCart, changeStateDrawerFav, stateDrawerC
     const { items, favItems, } = useContext(CartContext);
     const {LogOutUser} = useAccount();
     const currentUser = JSON.parse(localStorage.getItem('loggedUser'));
+    console.log(currentUser)
    
     const handleClose = () => {
         setOpen(!open);

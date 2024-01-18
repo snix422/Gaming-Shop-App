@@ -10,7 +10,8 @@ const ProductComments = (props) => {
     const [termComment, setTermComment] = useState('');
     const [comments, setComments] = useState([]);
     const [isAddComment, setIsAddComment] = useState(0);
-    const user = localStorage.getItem('loggedUser');
+    //const user = localStorage.getItem('loggedUser');\
+    const currentUser = JSON.parse(localStorage.getItem('loggedUser'));
    
     async function fetch(){
         const res = await axios.get(`https://gamingshop-4b668-default-rtdb.europe-west1.firebasedatabase.app/ProductsComment.json`)
@@ -36,8 +37,8 @@ const ProductComments = (props) => {
             try{
                 axios.post(`https://gamingshop-4b668-default-rtdb.europe-west1.firebasedatabase.app/ProductsComment.json`,{
                     productId: props.productId,
-                    userId: user.idUser,
-                    userEmail: user.email,
+                    userId: currentUser.idUser,
+                    userEmail: currentUser.email,
                     opinion: termComment  
                 })
             }catch(err){
@@ -52,7 +53,7 @@ const ProductComments = (props) => {
     }
 
     return(
-        <Container sx={{marginBottom:'50px', marginTop:'30px'}}>{user !== null ?  <Box sx={{display:'flex', flexDirection:'column', alignItems:'center'}}><TextField
+        <Container sx={{marginBottom:'50px', marginTop:'30px'}}>{currentUser !== null ?  <Box sx={{display:'flex', flexDirection:'column', alignItems:'center'}}><TextField
             id="outlined-multiline-flexible"
             label="Wpisz swój komentarz"
             multiline

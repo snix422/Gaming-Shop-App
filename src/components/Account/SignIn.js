@@ -23,7 +23,7 @@ const SignIn = () => {
    
   useEffect(()=>{
     if(isError === false){
-      toast.success('Zostałeś wylogowany');
+      toast.success('Zostałeś zalogowany');
       setTimeout(()=>{
         navigate('/');
       },1000)

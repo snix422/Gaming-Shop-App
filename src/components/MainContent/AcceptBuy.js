@@ -18,8 +18,8 @@ const AcceptBuy = () => {
     })
 
         
-        const {removeAllItemsCart} = useContext(CartContext);
-
+    const {removeAllItemsCart} = useContext(CartContext);
+    const currentUser = JSON.parse(localStorage.getItem('loggedUser'));
     const navigate = useNavigate();
     const myItems = JSON.parse(localStorage.getItem('totalItems'));
     console.log(myItems);
@@ -68,7 +68,8 @@ const AcceptBuy = () => {
                     idProduct: value.id,
                     idOrder: Math.floor(Math.random()*10000+1),
                     content: value,
-                    date: myDate
+                    date: myDate,
+                    idUser: currentUser.id
                    })
                    }catch(ex){
                     console.log(ex);
