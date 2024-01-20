@@ -49,7 +49,7 @@ const SearchComponent = () => {
                           </Link>
                           </Box>
                     )
-                }) : <Typography sx={{fontFamily:'Montserrat', fontSize:'30px'}}>Nie znaleziono produktu</Typography>}
+                }) : <Typography sx={{display:'flex', justifyContent:'center', fontFamily:'Montserrat', fontSize:'30px'}}>Nie znaleziono produktu</Typography>}
             </Box>
             </Box>
             <Footer />
