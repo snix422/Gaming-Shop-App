@@ -75,7 +75,7 @@ const Footer = () => {
                 </Box>
             </Stack>
             <Box sx={{marginTop: '20px'}}>
-            <Typography className={classes.linkStyle}>Copywright 2023 ©</Typography>
+            <Typography className={classes.linkStyle}>Copywright Mariusz Wójcik 2023-2024 ©</Typography>
             </Box>
         </Container>
         </Container>
