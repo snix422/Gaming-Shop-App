@@ -47,11 +47,11 @@ Gaming Shop is an e-commerce platform built using React. The platform enables us
 
 - Product Filtering: The platform provides filtering options for products based on various criteria, facilitating users in finding items of interest.
 
-- User Registration and Login: Users can create accounts, log in, and manage their profiles, ensuring a personalized shopping experience.
+- User Registration and Login: Users can create accounts, log in.
 
-- Commenting System: Ability to add comments and reviews on products, allowing the community to share opinions and feedback.
+- Commenting System: Ability to add comments  on products, allowing the community to share opinions and feedback.
 
-- Adding Products to Favorites: Users can add products to their favorites list for easier retrieval and future purchases.
+- Adding products to favorites: Logged in users can add products to their favorites list to facilitate their search and future purchases.
 
 - Product Category Selection: Ability to browse products by categories, streamlining navigation across the platform.
 
